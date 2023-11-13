@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shops.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <title>Shop -zaviyerStores</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <br /><br />
+        <a href="home.html">Home</a>
+        <a href="mentor.html">Mentorship</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <span id="openNav" onclick="openNav()">&#9776;</span>
+      <div class="content">
+        <div class="top-container">
+          <div class="logo">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\ZaviyerStores-logos_transparent.png" alt="ZaviyerStores" />
+          </div>
+          <span class="heading">Shop</span>
+          <button class="cart-toggle-button" onclick="toggleCart()">Cart</button>
+          <div class="shopping-cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items">
+        <!-- Cart items will be added dynamically using JavaScript -->
+    </ul>
+</div>
+          
+        </div>
+        <section class="product">
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\Whiskas Wet Meal kitten cat food.jpg" alt="Whiskas Wet Meal kitten cat food" />
+            <h3>Cat Food greavy</h3>
+            <p>Whiskas Wet Meal kitten cat food</p>
+            <span>Rs.200</span>
+             <a href="#" onclick="addToCart('Cat Food greavy', 200)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\RoyalChinn biscuits.png" alt="RoyalChinn biscuits" />
+            <h3></h3>
+            <p>RoyalChinn biscuits</p>
+            <span>Rs.350</span>
+            <a href="#" onclick="addToCart('RoyalChinn biscuits', 150)">Add to Cart</a>
+          </div>
+          <!-- Add more product cards as needed -->
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\Pedigree cat foods.jpg" alt="Pedigree cat foods" />
+            <h3>Pedigree</h3>
+            <p>Pedigree dog foods</p>
+            <span>Rs.400</span>
+            <a href="#" onclick="addToCart('Pedigree cat foods', 100)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\PUREPET CHICKEN DOG FOOD.jpeg" alt="PUREPET CHICKEN DOG FOOD" />
+            <h3>PUREPET</h3>
+            <p>PUREPET CHICKEN DOG FOOD</p>
+            <span>Rs.400</span>
+            <a href="#" onclick="addToCart('PUREPET CHICKEN DOG FOOD', 400)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\Drools wet food.jpg" alt="Drools wet food" />
+            <h3>Drools wet food</h3>
+            <p>Adult wet cat food</p>
+            <span>Rs.350</span>
+            <a href="#" onclick="addToCart('Adult wet cat food', 200)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\Me-o delicious cat foods.jpg" alt="Me-o delicious cat foods" />
+            <h3>Me-o delicious cat foods</h3>
+            <p>20 different flavours</p>
+            <span>Rs.650</span>
+            <a href="#" onclick="addToCart('Me-o delicious cat foods', 150)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\Meat-Up Dog foods.jpg" alt="Meat-Up Dog foods" />
+            <h3>Canvas</h3>
+            <p><h1>Meat-Up Dog foods</h1><br>With added viltamins<br>Suitable for all breeding</p>
+            <h3>meat up adult dog food</h3>
+            
+            <span>Rs.1000</span>
+            <a href="#" onclick="addToCart('Meat-Up Dog foods', 1000)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\dog playkit.jpeg" alt="dog playkit" />
+            <h3>dog playkit</h3>
+            <p>20 different balls and kit</p>
+            <span>Rs.400</span>
+            <a href="#" onclick="addToCart('Dog play kit', 20)">Add to Cart</a>  
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\cat combes.jpg" alt="cat combes" />
+            <h3>CAT COMBS</h3>
+            <p>30 different variations</p>
+            <span>Rs.1200</span>
+            <a href="#" onclick="addToCart('CAT COMBS 30 different variations', 200)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\DOG ROLLERS FOR MASSAGE.jpeg" alt="DOG ROLLERS FOR MASSAGE" />
+            <h3>DOG Roller</h3>
+            <p>DOG ROLLERS FOR MASSAGE</p>
+            <span>Rs.300</span>
+            <a href="#" onclick="addToCart('DOG Roller DOG ROLLERS FOR MASSAGE', 300)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\CAT TRAVEL BAGS.jpg" alt="CAT TRAVEL BAGS" />
+            <h3>CAT TRAVEL BAGS</h3>
+            <p><h1>30x30x40 travel bags</h1><br>With Leather borders <br>Suitable for travelling with cats</p>
+            <span>Rs.450</span>
+            <a href="#" onclick="addToCart('CAT TRAVEL BAGS', 450)">Add to Cart</a>
+          </div>
+          <div class="product-card">
+            <img src="/C:\Users\jashw\OneDrive\Desktop\images\PEDIGREE WET.jpeg" alt="Pedigree wet" />
+            <h3>PEDIGREE WET</h3>
+            <p>Everything you require</p>
+            <span>Rs.4000</span>
+            <a href="#" onclick="addToCart('PEDIGREE WET', 4000)">Add to Cart</a>
+          </div>
+        </section>
+        <section class="paintings">
+          <h2>OFFERS FOR PROFESSIONAL BREEDERS</h2>
+          <div class="painting-card">
+            <img src="/paintings/p1.webp" alt="OFFER-1" />
+            <h3>ROYAL CHNIN</h3>
+            <p>RoyalChnin wet foods 70gx20</p>
+            <span>Rs.7500</span>
+            <a href="#" onclick="addToCart('OFFER by ROYALCHNIN', 7500)">Add to Cart</a>
+          </div>
+          <div class="painting-card">
+            <img src="/paintings/p2.avif" alt="OFFER-2" />
+            <h3>WISKAS PET FOODS</h3>
+            <p></p>WISKAS ROYAL CAT TREATS 19GX20 
+            <span>Rs.2000</span>
+            <a href="#" onclick="addToCart('OFFER BY WISKAS', 2000)">Add to Cart</a>
+          </div>
+          <div class="painting-card">
+            <img src="/paintings/p3.jpg" alt="OFFER-3" />
+            <h3>DROOLS DOG FOODS</h3>
+            <p>DROOLS DOG ADULT biscuits 7KG </p>
+            <span>Rs.4500</span>
+            <a href="#" onclick="addToCart('OFFER BY DROOLS', 500)">Add to Cart</a>
+          </div>
+          <div class="painting-card">
+            <img src="/paintings/p4.webp" alt="OFFER-4" />
+            <h3>OFFER BY ME-O PET FOODS</h3>
+            <p>ME-O DOG GREAVY 3KG</p>
+            <span>Rs.2000</span>
+            <a href="#" onclick="addToCart('OFFER BY ME-0', 2000)">Add to Cart</a>
+          </div>
+          
+        </section>
+      </div>
+    </div>
+
+    <script src="shopj.js"></script>
+  </body>
+</html>
